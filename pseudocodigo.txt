@@ -1,0 +1,12 @@
+INÍCIO
+
+Exibir tela de cadastro
+Ler opções do usuário
+
+SE escolha inicial = 1 ENTÃO
+  Exibir tela de cadastro
+SENÃO SE escolha inicial = 2 ENTÃO
+  Exibir tela de login
+FIMSE
+
+FIM
