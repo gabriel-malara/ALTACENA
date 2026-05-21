@@ -1,12 +1,57 @@
 INÍCIO
 
 Exibir tela de cadastro
-Ler opções do usuário
+Ler escolha inicial
 
 SE escolha inicial = 1 ENTÃO
   Exibir tela de cadastro
+  Ler nome, data_de_nascimento, email, senha
+  SE EmailJaExiste(email) ENTÃO
+    Exibir "E-mail já cadastrado"
+  SENÃO 
+    CriarUsuario(nome, data_de_nascimento, email, senha)
+    EnviarConfirmacaoDeEmail(email)
+    Exibir "Cadastro realizado."
+  FIMSE
 SENÃO SE escolha inicial = 2 ENTÃO
   Exibir tela de login
+  Ler email, senha
+  usuario = BuscarUsuario(email)
+  SE usuario = NULO ou usuario.senha != senha ENTÃO
+    Exibir "Login Inválido"
+  SENÃO
+    SalvarSessao(usuario)
+    Exibir tela de eventos
+    SE usuario.tipo = "espectador" ENTÃO
+      Ler evento escolhido, acao
+      SE acao = "inscrever" e evento escolhido.vagas_disponíveis > 0 ENTÃO
+        Exibir tela de pagamento
+        Ler status da transação
+        SE status da transação = "Aprovado" ENTÃO
+          CriarIngresso(evento escolhido)
+          EntregarIngressoAoUsuario(usuario)
+          Exibir "Compra realizada."
+        SENÃO
+          Exibir "Houve um erro com sua transação. Tente novamente."
+        FIMSE
+      FIMSE
+    SENÃO SE usuario.tipo = "produtor" ENTÃO
+      Exibir tela de criação de eventos
+      Ler acao
+      SE acao = "criar evento" ENTÃO
+        Ler nome_do_evento, descricao, local, horario, precos, vagas
+        CriarEvento(nome_do_evento, descricao, local, horario, precos, vagas)
+      SENÃO SE acao = "deletar evento" ENTÃO
+        Ler id_do_evento
+        Deletar(id_do_evento)
+      SENÃO SE acao = "editar evento" ENTÃO
+        Ler alteracoes
+        AlterarPropriedadesEvento(alteracoes)
+      FIMSE
+      SENÃO SE usuario.tipo = "administrador" ENTÃO
+        Exibir tela de controle
+    FIMSE
+  FIMSE  
 FIMSE
 
 FIM
