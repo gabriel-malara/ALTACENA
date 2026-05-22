@@ -1,6 +1,6 @@
 INÍCIO
 
-Exibir tela de cadastro
+Exibir tela inicial
 Ler escolha inicial
 
 SE escolha inicial = 1 ENTÃO
@@ -48,8 +48,13 @@ SENÃO SE escolha inicial = 2 ENTÃO
         Ler alteracoes
         AlterarPropriedadesEvento(alteracoes)
       FIMSE
-      SENÃO SE usuario.tipo = "administrador" ENTÃO
-        Exibir tela de controle
+    SENÃO SE usuario.tipo = "administrador" ENTÃO
+      Exibir tela de controle
+      Ler eventos
+      SE eventos.denuncias = "válido" ENTÃO
+        excluir(eventos)
+        Exibir "Evento excluído por: eventos.denuncias"
+      FIMSE
     FIMSE
   FIMSE  
 FIMSE
