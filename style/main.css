@@ -5,7 +5,7 @@
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: rgb(240, 240, 240);
-    margin: 0
+    margin: 0;
 }
 .header{
     background-color: black;
@@ -32,7 +32,57 @@ a{
 #img-superior{
     width: 80%;
 }
-#header2{
+#header-2{
     text-align: center;
     padding: 10px;
+}
+.coluna{
+    float: left;
+    padding: 20px;
+    width: 50%;
+    text-align: center;
+}
+.holder{
+    width: 400px;
+    margin: auto;
+    margin-top: 50px;
+}
+.holder img{
+    width: 100%;
+    margin: 0;
+}
+.info-area{
+    text-align: start;
+    margin: 0;
+    padding: 30px;
+    background-color: rgb(234, 234, 234);
+}
+.info-area p, .info-area h2{
+    color: black;
+}
+#conteudo-2::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#rodape{
+    background-color: black;
+    padding: 20px;
+}
+#copyright{
+    text-align: center;
+}
+#informacoes-1{
+    font-size: larger;
+}
+#telefone{
+    width: 100%;
+    text-align: end;
+}
+#informacoes-2{
+    font-size: larger;
+    display: flex;
+}
+#altacena-logo-footer{
+    text-align: center;
 }
