@@ -1,6 +1,5 @@
 *{
     box-sizing: border-box;
-    color: white;
 }
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -19,9 +18,34 @@ body{
     text-align: end;
     padding: 30px;
 }
-a{
+.header a{
     text-decoration: none;
     font-weight: bold;
     margin: 30px;
     font-size: larger;
+    color: white;
+}
+#conteudo{
+    display: flex;
+}
+.coluna{
+    width: 50%;
+}
+.esquerda{
+    text-align: center;
+    padding: 80px;
+}
+.direita{
+    padding: 80px;
+    text-align: justify;
+}
+@media (max-width: 800px){
+    .coluna{
+        width: 100%;
+    }
+    #altacena-logo-header{
+        width:  30%;
+        height:auto;
+        object-fit: contain;
+    }
 }

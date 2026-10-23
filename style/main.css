@@ -1,6 +1,5 @@
 *{
     box-sizing: border-box;
-    color: white;
 }
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -13,17 +12,19 @@ body{
 }
 #header{
     display: flex;
+    color: white;
 }
 #nav-options{
     width: 100%;
     text-align: end;
     padding: 30px;
 }
-a{
+#header a{
     text-decoration: none;
     font-weight: bold;
     margin: 30px;
     font-size: larger;
+    color: white;
 }
 #foto-principal{
     padding: 30px;
@@ -35,6 +36,7 @@ a{
 #header-2{
     text-align: center;
     padding: 10px;
+    color: white;
 }
 .coluna{
     float: left;
@@ -61,11 +63,9 @@ a{
 .info-area p, .info-area a{
     color: black;
 }
-.info-area p{
-    margin: 20px;
-}
 .info-area a{
     font-size: larger;
+    text-decoration: none;
 }
 #conteudo-2::after {
   content: "";
@@ -75,6 +75,7 @@ a{
 #rodape{
     background-color: black;
     padding: 20px;
+    color: white;
 }
 #copyright{
     text-align: center;
@@ -92,7 +93,8 @@ a{
 }
 #informacoes-2 a{
     font-weight: lighter;
-    color: black;
+    color: white;
+    text-decoration: none;
 }
 #altacena-logo-footer{
     text-align: center;
@@ -100,5 +102,10 @@ a{
 @media (max-width: 800px){
     .coluna{
         width: 100%;
+    }
+    #altacena-logo-header{
+        width:  30%;
+        height:auto;
+        object-fit: contain;
     }
 }
