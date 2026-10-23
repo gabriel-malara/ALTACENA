@@ -39,13 +39,104 @@ body{
     padding: 80px;
     text-align: justify;
 }
+#botao-confirmacao{
+    width: 200px;
+    height: 80px;
+    background-color: black;
+    color: white;
+    font-size: xx-large;
+    font-weight: bolder;
+    border: none;
+    cursor: pointer;
+}
+.esquerda2, .direita2{
+    padding-left: 80px;
+}
+#lista li{
+    margin: 5px;
+}
+#endereco{
+    width: 600px;
+}
+#fazer-comentario-area{
+    width: 600px;
+    height: 100px;
+}
+#comentar{
+    width: 600px;
+    text-align: end;
+}
+#self-comentario{
+    width: 100%; height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    resize: none;
+    background: none;
+    outline: none;
+    border-bottom: 2px solid rgb(210, 210, 210);
+}
+#enviar-button{
+    margin: 20px;
+    border: none;
+    background-color: rgb(210, 210, 210);
+    padding: 10px;
+    width: 100px;
+    cursor: pointer;
+}
+#comentario{
+    width: 600px;
+    background-color: rgb(210, 210, 210);
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+}
+#persona-info img{
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+}
+#username{
+    font-size: smaller;
+}
+#rodape{
+    background-color: black;
+    padding: 20px;
+    color: white;
+}
+#copyright{
+    text-align: center;
+}
+#informacoes-1{
+    font-size: larger;
+}
+#telefone{
+    width: 100%;
+    text-align: end;
+}
+#informacoes-2{
+    font-size: larger;
+    display: flex;
+}
+#informacoes-2 a{
+    font-weight: lighter;
+    color: white;
+    text-decoration: none;
+}
+#altacena-logo-footer{
+    text-align: center;
+}
+#conteudo-2::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 @media (max-width: 800px){
     .coluna{
         width: 100%;
     }
     #altacena-logo-header{
-        width:  30%;
-        height:auto;
+        width: 30%;
+        height: auto;
         object-fit: contain;
     }
 }
