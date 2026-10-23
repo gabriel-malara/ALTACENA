@@ -46,6 +46,7 @@ a{
     width: 400px;
     margin: auto;
     margin-top: 50px;
+    cursor: pointer;
 }
 .holder img{
     width: 100%;
@@ -57,8 +58,14 @@ a{
     padding: 30px;
     background-color: rgb(234, 234, 234);
 }
-.info-area p, .info-area h2{
+.info-area p, .info-area a{
     color: black;
+}
+.info-area p{
+    margin: 20px;
+}
+.info-area a{
+    font-size: larger;
 }
 #conteudo-2::after {
   content: "";
@@ -83,6 +90,14 @@ a{
     font-size: larger;
     display: flex;
 }
+#informacoes-2 a{
+    font-weight: lighter;
+}
 #altacena-logo-footer{
     text-align: center;
+}
+@media (max-width: 800px){
+    .coluna{
+        width: 100%;
+    }
 }
