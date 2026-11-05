@@ -1,0 +1,199 @@
+/* --- RESET BÁSICO --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* --- CABEÇALHO PADRÃO (IDÊNTICO AO INDEX) --- */
+#header.header {
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    width: 100%;
+}
+
+#header.header img {
+    height: 32px;
+    display: block;
+}
+
+#nav-options {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+#nav-options a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: opacity 0.2s ease;
+}
+
+#nav-options a:hover {
+    opacity: 0.75;
+}
+
+/* --- ÁREA PRINCIPAL DO PERFIL --- */
+.perfil-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    min-height: calc(100vh - 280px);
+}
+
+/* Topo do Usuário: Avatar e Dados */
+.perfil-card {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Limita o avatar a 90px e deixa redondo */
+.perfil-avatar-grande img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #cccccc;
+    display: block;
+    border: 2px solid #000000;
+}
+
+.perfil-dados {
+    flex-grow: 1;
+}
+
+.perfil-linha-nome {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 6px;
+}
+
+.perfil-linha-nome h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.membro-desde {
+    font-size: 0.8rem;
+    color: #666666;
+}
+
+.perfil-dados p {
+    font-size: 0.9rem;
+    color: #444444;
+    margin-bottom: 4px;
+}
+
+/* Botões Pretos Estilo Wireframe */
+.btn-preto-pequeno {
+    display: inline-block;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: opacity 0.2s ease;
+}
+
+.btn-preto-pequeno:hover {
+    opacity: 0.85;
+}
+
+/* --- SEÇÕES: EVENTOS E COMENTÁRIOS --- */
+.perfil-secao {
+    margin-top: 35px;
+}
+
+.perfil-secao h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 14px;
+}
+
+.card-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.item-lista {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7f7f7;
+    border: 1px solid #e5e5e5;
+    padding: 14px 18px;
+}
+
+.item-lista h4 {
+    font-size: 0.95rem;
+    margin-bottom: 4px;
+}
+
+.item-lista p {
+    font-size: 0.85rem;
+    color: #555555;
+}
+
+.item-comentario {
+    background-color: #f7f7f7;
+    border-left: 4px solid #000000;
+    border-top: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 14px 18px;
+}
+
+.item-comentario p {
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-bottom: 6px;
+    color: #222222;
+}
+
+.item-comentario small {
+    font-size: 0.8rem;
+    color: #666666;
+}
+
+/* --- RODAPÉ WIREFRAME --- */
+#rodape {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 30px 40px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#copyright p {
+    font-size: 0.85rem;
+    color: #cccccc;
+}
+
+#altacena-logo-footer img {
+    height: 28px;
+    display: block;
+}
