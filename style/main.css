@@ -10,9 +10,17 @@ body{
     background-color: black;
     box-shadow: 0px 10px 10px rgb(99, 99, 99);
 }
-#header{
+#header.header {
+    background-color: #000000;
     display: flex;
-    color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    width: 100%;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 #nav-options{
     width: 100%;

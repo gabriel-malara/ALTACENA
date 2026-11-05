@@ -19,6 +19,11 @@ body {
     align-items: center;
     padding: 18px 40px;
     width: 100%;
+
+    /* Propriedades para fixar o menu no topo */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 #header.header img {
