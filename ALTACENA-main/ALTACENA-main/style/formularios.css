@@ -71,7 +71,6 @@ body {
     line-height: 1.4;
 }
 
-/* --- FORMULÁRIOS ESTILO WIREFRAME --- */
 .formulario-padrao {
     display: flex;
     flex-direction: column;
@@ -205,11 +204,4 @@ body {
 #altacena-logo-footer img {
     height: 28px;
     display: block;
-}
-
-/* Responsivo para telas menores */
-@media (max-width: 768px) {
-    .form-container {
-        grid-template-columns: 1fr;
-    }
 }
