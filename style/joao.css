@@ -105,6 +105,7 @@ body{
 }
 #copyright{
     text-align: center;
+    margin: 0;
 }
 #informacoes-1{
     font-size: larger;
@@ -139,4 +140,14 @@ body{
         height: auto;
         object-fit: contain;
     }
+}
+
+.perfil-avatar-grande img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 20px solid white;
+    object-fit: cover;
+    background-color: #cccccc;
+    border: 2px solid #000000;
 }
